@@ -1,0 +1,156 @@
+/*Global*/
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*Nav*/
+
+nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    
+}
+
+.logo {
+    width: 20px;
+    padding-left: .3rem;
+    padding-top: .3rem;
+}
+
+.complete-logo {
+    display: none;
+    width: 100px;
+}
+
+@media(min-width:768px) {
+    .logo {
+        display: none;
+    }
+
+    .complete-logo {
+        display: block;
+    }
+}
+
+.nav-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-icons i,p{
+    font-size: 18px;
+    margin-right: .5rem;
+}
+
+.nav-icons i:first-of-type {
+    border-right: .05px solid black;
+    padding-right: 1rem;
+}
+
+.subs:hover {
+    border-bottom:  2px solid #f5dc01;
+}
+
+.nav-text{
+    display: none;
+}
+@media(min-width: 768px) {
+    .nav-text {
+        display: block;
+    }
+}
+
+
+
+/*Header*/
+
+header {
+    background-color: black;
+    color: white;
+    
+}
+
+header h1 {
+    font-size: 40px;
+    text-align: center;
+    letter-spacing:  5px;
+    padding-top: 40px;
+}
+
+.header-subtitle {
+    text-align: center;
+}
+
+.header-subtitle strong {
+    font-weight: 400;
+    border-bottom: 3px solid yellow;
+}
+
+.header-subtitle strong:hover {
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+}
+
+div.main-news {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url(http://127.0.0.1:5500/img/natgeo.jpg);
+    width: 20rem;
+    height: 22rem;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    padding: 30px;
+}
+
+h3 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.main-text-news {
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.read-text {
+    display: flex;
+}
+
+.read-text p {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.read-text i {
+    margin-right: 10px;
+}
+
+/*Secondary-news*/
+
+.news img {
+
+}
+
+.news-text {
+    background-color: white;
+    color: black;
+    height: 50rem;
+    width: 100%;
+}
